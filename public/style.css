@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+}
+
+main {
+  background-color: rgb(19, 19, 19);
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: rgb(191, 191, 191);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+article {
+  background-color: rgb(31, 31, 31);
+  border-radius: 10%;
+  margin: 5%;
+}
+
+img {
+  border-radius: 10%;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: -5%;
+  margin-top: 5%;
+}
+
+.musicgrid {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 15rem;
+  padding: var(--space-lg);
+  background: var(--surface-black);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+/*.registerbtns {
+  margin-left: auto;
+  
+}
+*/
+
+a {
+  float: right;
+  background-color: white;
+  color: black;
+  border-radius: 30%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+}

@@ -1,0 +1,96 @@
+---
+import Cards from "../components/Cards.astro";
+import Nav from "../components/Nav.astro";
+import TopNav from "../components/TopNav.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <Nav />
+    <TopNav />
+    <main>
+      <h1>Spotify-playlister</h1>
+      <section class="musicgrid">
+        <Cards
+          header="Today's Top Hits"
+          imgsrc="https://picsum.photos/id/331/150/150"
+          ,
+          text="Jung Kook is on top of the Hottest 50!"
+        />
+        <Cards
+          header="RapCaviar"
+          imgsrc="https://picsum.photos/id/325/150/150"
+          ,
+          text="New music from Drake, Rod wave and Doja cat"
+        />
+        <Cards
+          header="All Out 2010s"
+          imgsrc="https://picsum.photos/id/338/150/150"
+          ,
+          text="The biggest songs of the 2010s"
+        />
+        <Cards
+          header="Rock Classics"
+          imgsrc="https://picsum.photos/id/364/150/150"
+          ,
+          text="Rock legends & epic songs"
+        />
+        <Cards
+          header="Chill Hits"
+          imgsrc="https://picsum.photos/id/65/150/150"
+          ,
+          text="Kick back to the best new and recent chill hits"
+        />
+      </section>
+      <h1>Fokus</h1>
+      <section class="musicgrid">
+        <Cards
+          header="Today's Top Hits"
+          imgsrc="https://picsum.photos/id/331/150/150"
+          ,
+          text="Jung Kook is on top of the Hottest 50!"
+        />
+        <Cards
+          header="RapCaviar"
+          imgsrc="https://picsum.photos/id/325/150/150"
+          ,
+          text="New music from Drake, Rod wave and Doja cat"
+        />
+        <Cards
+          header="All Out 2010s"
+          imgsrc="https://picsum.photos/id/338/150/150"
+          ,
+          text="The biggest songs of the 2010s"
+        />
+        <Cards
+          header="Rock Classics"
+          imgsrc="https://picsum.photos/id/364/150/150"
+          ,
+          text="Rock legends & epic songs"
+        />
+        <Cards
+          header="Chill Hits"
+          imgsrc="https://picsum.photos/id/65/150/150"
+          ,
+          text="Kick back to the best new and recent chill hits"
+        />
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .musicgrid {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+</style>
